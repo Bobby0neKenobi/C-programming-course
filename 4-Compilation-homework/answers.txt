@@ -1,0 +1,12 @@
+Задача 3
+gcc -c transformation.c -o transformation.o
+gcc main.c transformation.o -o main_program
+main_program.exe
+Задача 4
+gcc school18.c -o school18.exe
+school18.exe
+Задача 5
+gcc -c maths.c -o maths.o
+ar rcs libmaths.a maths.o
+gcc main2.c -o main_program2 -L. -lmaths
+main_program2.exe

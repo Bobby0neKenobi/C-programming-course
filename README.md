@@ -1,2 +1,2 @@
 # C-programming-course
-School Programming Course in C
+9 grade School Programming Class in C

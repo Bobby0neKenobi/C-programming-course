@@ -44,6 +44,7 @@ int main(void) {
   printDynArr(&dynArr);
 
   printf("%d\n", findId(&dynArr, 50));
+  printf("%d\n", findId(&dynArr, 80));
   
   release(&dynArr);
   printf("Assert release size == 0: %d\n", dynArr.size == 0);

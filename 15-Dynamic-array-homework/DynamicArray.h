@@ -25,6 +25,6 @@ void set(DynamicArray * dynArr, uint index, DynArrType value);
 
 void release(DynamicArray * dynArr);
 
-int findId(DynamicArray * dynArr, uint value)
+long long findId(DynamicArray * dynArr, DynArrType value);
 
 #endif

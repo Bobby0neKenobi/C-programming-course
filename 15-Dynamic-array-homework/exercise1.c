@@ -31,18 +31,20 @@ int main(void) {
   DynArrType lastElement = popBack(&dynArr);
   printf("Last element: %d\n", lastElement);
   printDynArr(&dynArr);
-
+  
   DynArrType thirdElement = pop(&dynArr, 2);
   printf("Third element: %d\n", thirdElement);
   printDynArr(&dynArr);
-
+  
   DynArrType secondElement = get(&dynArr, 1);
   printf("Second element: %d\n", secondElement);
   printDynArr(&dynArr);
-
+  
   set(&dynArr, 1, 50);
   printDynArr(&dynArr);
 
+  printf("%d\n", findId(&dynArr, 50));
+  
   release(&dynArr);
   printf("Assert release size == 0: %d\n", dynArr.size == 0);
   printf("Assert release capacity == 0: %d\n", dynArr.capacity == 0);

@@ -107,3 +107,12 @@ void release(DynamicArray * dynArr) {
   dynArr->capacity = 0;
   dynArr->size = 0;
 }
+
+long long findId(DynamicArray * dynArr, DynArrType value) {
+  for(int i = 0; i < dynArr->capacity; i++){
+    if(dynArr->buffer[i] == value){
+      return i;
+    }
+  }
+  return -1;
+}
